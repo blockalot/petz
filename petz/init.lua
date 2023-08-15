@@ -42,7 +42,7 @@ end
 
 if petz.settings["remove_list"] then
 	for i = 1, #petz.settings["remove_list"] do
-		local file_name = modpath .. "/petz/"..petz.settings["remove_list"][i].."_kitz"..".lua"
+		local file_name = modpath .. "/petz/"..petz.settings["remove_list"][i].."_mobkit"..".lua"
 		if petz.file_exists(file_name) then
 			assert(loadfile(file_name))(S)
 		end
